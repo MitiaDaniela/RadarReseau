@@ -19,7 +19,7 @@ jobs:
 
     - name: Build with Gradle
       run: |
-        chmod +x ./gradlew
+        gradle wrapper
         ./gradlew assembleDebug
 
     - name: Upload APK
